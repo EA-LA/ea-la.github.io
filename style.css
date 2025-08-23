@@ -72,22 +72,22 @@ section{ padding:56px 20px; max-width:1000px; margin:0 auto }
   border:1px solid rgba(229,9,20,.35); font-size:13px; opacity:.95;
 }
 
-.about-wrap{
-  display:grid; grid-template-columns:120px 1fr; gap:16px; align-items:start;
-}
-.about-photo{
-  width:120px; height:120px; border-radius:12px; object-fit:cover;
-  border:1px solid rgba(229,9,20,.25);
-}
-.bullets{margin:8px 0 0 0; padding-left:20px; color:var(--muted)}
-.bullets li{margin:.25rem 0}
+/* ABOUT (text only) */
+.about-wrap.text-only{display:block}
+.about-text{min-width:0}
+.bullets{margin:10px 0 0 0; padding-left:20px; color:var(--ink)}
+.bullets.tight li{margin:.35rem 0}
+.bullets li strong{color:var(--ink)}
+.bullets li{max-width:70ch}
 
+/* Pills */
 .pill-grid{display:flex; flex-wrap:wrap; gap:10px}
 .pill{
   border:1px solid rgba(229,9,20,.35); padding:6px 10px; border-radius:999px;
   font-size:13px; background:rgba(229,9,20,.06)
 }
 
+/* Quotes */
 .quote{
   background:var(--panel);
   border-left:3px solid var(--accent);
