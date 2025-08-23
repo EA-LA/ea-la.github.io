@@ -20,28 +20,40 @@
   </header>
 
   <main>
-    <section style="max-width:760px">
+    <section class="contact-wrap">
       <h1>Contact</h1>
-      <p>For business inquiries, collaborations, or a 1:1 call, use the form below.  
-         You can also reach me on <a href="https://www.instagram.com/___elham_amini___" target="_blank" rel="noopener">Instagram</a> or <a href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      <p class="muted">
+        For business inquiries, collaborations, or a 1:1 call, send a message below.
+        You can also reach me on
+        <a href="https://www.instagram.com/___elham_amini___" target="_blank" rel="noopener">Instagram</a>
+        or
+        <a href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>.
+      </p>
 
-      <!-- Replace the action URL with your Formspree/Basin ID when you create one -->
-      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" rows="6" placeholder="How can I help?" required></textarea>
+      <!-- FORM: replace "your-form-id" with your actual Formspree ID -->
+      <form class="ea-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
 
-        <!-- Optional hidden fields -->
-        <input type="hidden" name="site" value="EA Official">
-        <button class="button" type="submit">Send Message</button>
+        <label>
+          <span>Email</span>
+          <input type="email" name="_replyto" placeholder="you@email.com" required>
+        </label>
+
+        <label class="full">
+          <span>How can I help?</span>
+          <textarea name="message" rows="6" placeholder="Tell me what you need…" required></textarea>
+        </label>
+
+        <button class="button submit" type="submit">Send Message</button>
       </form>
 
-      <div class="cta" style="margin-top:14px">
+      <div class="cta contact-quick">
         <a class="button ghost" href="mailto:ha6876122@gmail.com">Email me directly</a>
         <a class="button ghost" href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>
       </div>
-      <p class="muted">Tip: create a free Formspree form and paste your form ID in the <code>action</code> URL above.</p>
     </section>
   </main>
 
