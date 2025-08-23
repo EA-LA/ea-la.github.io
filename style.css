@@ -39,7 +39,9 @@ h3{font-size:clamp(18px,2.6vw,22px)}
 
 .hero{
   padding:90px 20px 36px;
-  max-width:1000px; margin:0 auto; text-align:center;
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
 }
 h1{font-size:clamp(38px,6vw,64px); line-height:1.1}
 .subtitle{opacity:.95; font-size:clamp(16px,2.2vw,20px); margin-top:8px}
@@ -54,7 +56,11 @@ h1{font-size:clamp(38px,6vw,64px); line-height:1.1}
 .button.ghost{ border-color:rgba(229,9,20,.5) }
 .button.small{padding:10px 14px; font-size:14px}
 
-section{ padding:56px 20px; max-width:1000px; margin:0 auto }
+section{
+  padding:56px 20px;
+  max-width:1200px;      /* wider container */
+  margin:0 auto;
+}
 .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px }
 .card{
   background:var(--panel);
@@ -72,13 +78,25 @@ section{ padding:56px 20px; max-width:1000px; margin:0 auto }
   border:1px solid rgba(229,9,20,.35); font-size:13px; opacity:.95;
 }
 
-/* ABOUT (text only) */
+/* ABOUT (text only, fixed) */
 .about-wrap.text-only{display:block}
-.about-text{min-width:0}
-.bullets{margin:10px 0 0 0; padding-left:20px; color:var(--ink)}
-.bullets.tight li{margin:.35rem 0}
+.about-text{
+  min-width:0;
+  max-width:900px;    /* wide text block */
+  margin:0 auto;
+}
+.about-text p{
+  max-width:none;
+  text-align:justify; /* straight edges left & right */
+}
+.bullets{
+  margin:14px 0 0 0;
+  padding-left:20px;
+  color:var(--ink)
+}
+.bullets.tight li{margin:.45rem 0}
 .bullets li strong{color:var(--ink)}
-.bullets li{max-width:70ch}
+.bullets li{max-width:none}
 
 /* Pills */
 .pill-grid{display:flex; flex-wrap:wrap; gap:10px}
