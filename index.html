@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elham Amini — Official Site</title>
-  <meta name="description" content="Official website of Elham Amini — entrepreneur, app builder, trader." />
+  <title>Elham Amini — Official Website</title>
+  <meta name="description" content="Elham Amini — entrepreneur, app builder, trader. Official personal website with projects, services, and contact." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="nav">
-    <div class="brand">EA • Elham Amini</div>
+    <a class="brand" href="#">EA • Elham Amini</a>
     <nav class="menu">
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#projects">Projects</a>
+      <a href="#testimonials">Stories</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <h1>Elham Amini</h1>
       <p class="subtitle">Entrepreneur • App Builder • Trader</p>
@@ -28,48 +33,85 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
-      <p>
-        I build apps, tools, and systems for creators and traders. My focus:
-        clean design, real-world utility, and growth. This site is my central hub —
-        projects, updates, and ways to connect.
-      </p>
+      <div class="about-wrap">
+        <img class="about-photo" src="me.jpg" alt="Elham Amini portrait (placeholder)">
+        <p>
+          I build apps, tools, and systems to help creators and traders win. I love clean design, useful software, and momentum.
+          This site is my hub for updates, projects, and ways to work with me.
+        </p>
+      </div>
     </section>
 
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>App Build & UI Review</h3>
+          <p>Swift/Xcode guidance, feature planning, and UI/UX polish for your iOS app.</p>
+          <a class="chip" href="#">By request</a>
+        </article>
+        <article class="card">
+          <h3>Trading Utilities & Setup</h3>
+          <p>Position-size tools, journaling flows, and risk frameworks tailored to you.</p>
+          <a class="chip" href="#">By request</a>
+        </article>
+        <article class="card">
+          <h3>1:1 Strategy Call</h3>
+          <p>30–45 min call: roadmap, bottlenecks, and next actions.</p>
+          <a class="button small" href="#" target="_blank" rel="noopener">Book a Call</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="grid">
         <article class="card">
           <h3>FYNX (iOS)</h3>
           <p>Trading utilities, calculators, and clean UI built in Swift.</p>
-          <div>
-            <span class="badge">Swift</span>
-            <span class="badge">iOS</span>
-          </div>
+          <div><span class="badge">Swift</span> <span class="badge">iOS</span></div>
         </article>
         <article class="card">
           <h3>PostMap</h3>
           <p>Content planning, AI ideas, captions, and scheduling for social growth.</p>
-          <div>
-            <span class="badge">Xcode</span>
-            <span class="badge">AI</span>
-          </div>
+          <div><span class="badge">AI</span> <span class="badge">Content</span></div>
         </article>
         <article class="card">
           <h3>DarkSignal</h3>
           <p>Privacy-first messaging concepts and experiments.</p>
-          <div>
-            <span class="badge">Security</span>
-            <span class="badge">Concept</span>
-          </div>
+          <div><span class="badge">Security</span> <span class="badge">Concept</span></div>
         </article>
       </div>
     </section>
 
+    <!-- TESTIMONIALS / STORIES -->
+    <section id="testimonials">
+      <h2>Success Stories</h2>
+      <div class="grid">
+        <blockquote class="quote">“Elham’s guidance helped me polish my app UI and ship v1 fast.” <span>— A. K.</span></blockquote>
+        <blockquote class="quote">“The trading checklist removed the noise. I finally trade my plan.” <span>— M. S.</span></blockquote>
+        <blockquote class="quote">“Actionable next steps every call. Zero fluff.” <span>— R. T.</span></blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Business inquiries: <a href="mailto:ha6876122@gmail.com">ha6876122@gmail.com</a></p>
+
+      <!-- Optional contact form (connect to Formspree/Basin later) -->
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="_replyto" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="How can I help?" required></textarea>
+        <button class="button" type="submit">Send</button>
+      </form>
+      <p class="muted">Don’t want a form? Delete it — email works great.</p>
     </section>
   </main>
 
