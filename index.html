@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elham Amini — Official Site</title>
+  <meta name="description" content="Official website of Elham Amini — entrepreneur, app builder, trader." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">EA • Elham Amini</div>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Elham Amini</h1>
+      <p class="subtitle">Entrepreneur • App Builder • Trader</p>
+      <div class="cta">
+        <a class="button" href="#projects">View Projects</a>
+        <a class="button ghost" href="https://www.instagram.com/___elham_amini___" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I build apps, tools, and systems for creators and traders. My focus:
+        clean design, real-world utility, and growth. This site is my central hub —
+        projects, updates, and ways to connect.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>FYNX (iOS)</h3>
+          <p>Trading utilities, calculators, and clean UI built in Swift.</p>
+          <div>
+            <span class="badge">Swift</span>
+            <span class="badge">iOS</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>PostMap</h3>
+          <p>Content planning, AI ideas, captions, and scheduling for social growth.</p>
+          <div>
+            <span class="badge">Xcode</span>
+            <span class="badge">AI</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>DarkSignal</h3>
+          <p>Privacy-first messaging concepts and experiments.</p>
+          <div>
+            <span class="badge">Security</span>
+            <span class="badge">Concept</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Business inquiries: <a href="mailto:ha6876122@gmail.com">ha6876122@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Elham Amini. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
