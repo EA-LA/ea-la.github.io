@@ -1,0 +1,65 @@
+:root{
+  --bg:#000;
+  --ink:#eaeaea;
+  --accent:#00ff88; /* Matrix neon */
+  --panel:#0c0c0c;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#000 0%, #0a0a0a 100%);
+  color:var(--ink);
+  font-family:ui-sans-serif, -apple-system, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height:1.6;
+}
+
+a{color:var(--ink);text-decoration:none}
+h1,h2,h3{margin:0 0 .5rem 0}
+
+.nav{
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 20px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(0,255,136,.2);
+}
+.brand{font-weight:700; letter-spacing:.4px}
+.menu a{margin-left:16px; opacity:.85}
+.menu a:hover{opacity:1; color:var(--accent)}
+
+.hero{
+  padding:84px 20px 36px;
+  max-width:1000px; margin:0 auto; text-align:center;
+}
+h1{font-size:clamp(36px,6vw,64px); line-height:1.1}
+.subtitle{opacity:.9; font-size:clamp(16px,2.3vw,20px); margin-top:8px}
+
+.cta{margin-top:22px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+.button{
+  display:inline-block; padding:12px 16px; border-radius:12px;
+  border:1px solid var(--accent);
+  transition:transform .08s ease, box-shadow .18s ease, background .18s ease;
+}
+.button:hover{ transform:translateY(-1px); box-shadow:0 0 22px rgba(0,255,136,.25), 0 0 2px rgba(0,255,136,.6) inset }
+.button.ghost{ background:transparent; border-color:rgba(0,255,136,.5) }
+
+section{ padding:56px 20px; max-width:1000px; margin:0 auto }
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px }
+.card{
+  background:var(--panel);
+  border:1px solid rgba(0,255,136,.18);
+  border-radius:16px; padding:16px;
+  box-shadow:0 0 0 1px rgba(0,255,136,.06) inset;
+}
+.badge{
+  display:inline-block; border:1px solid rgba(0,255,136,.45);
+  padding:2px 8px; border-radius:999px; font-size:12px; margin-right:6px; opacity:.9
+}
+
+footer{
+  padding:28px 20px; text-align:center; opacity:.75;
+  border-top:1px solid rgba(0,255,136,.12)
+}
