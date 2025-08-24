@@ -30,8 +30,8 @@
         <a href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>.
       </p>
 
-      <!-- ✅ FORM: now using your real Formspree endpoint -->
-      <form class="ea-form" action="https://formspree.io/f/mdklnaol" method="POST">
+      <!-- ✅ Using your real Formspree endpoint + redirect to thank-you.html -->
+      <form class="ea-form" action="https://formspree.io/f/mdklnaol" method="POST" accept-charset="UTF-8">
         <label>
           <span>Name</span>
           <input type="text" name="name" placeholder="Your name" required>
@@ -47,11 +47,14 @@
           <textarea name="message" rows="6" placeholder="Tell me what you need…" required></textarea>
         </label>
 
-        <!-- Optional subject -->
+        <!-- Email subject line you’ll see -->
         <input type="hidden" name="_subject" value="New message from elhamamini.cc">
 
-        <!-- Optional redirect (create thank-you.html if you want this) -->
-        <!-- <input type="hidden" name="_next" value="https://elhamamini.cc/thank-you.html"> -->
+        <!-- Redirect after successful submit -->
+        <input type="hidden" name="_next" value="https://elhamamini.cc/thank-you.html">
+
+        <!-- Simple bot trap -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
         <button class="button submit" type="submit">Send Message</button>
       </form>
@@ -67,8 +70,6 @@
     © <span id="year"></span> Elham Amini.
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
