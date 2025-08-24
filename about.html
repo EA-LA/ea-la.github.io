@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Elham Amini</title>
+  <meta name="description" content="More about Elham Amini — background, goals, and the SBA worksheet." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">EA • Elham Amini</a>
+    <nav class="menu">
+      <a href="index.html#about">Overview</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#stories">Stories</a>
+      <a class="button small" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-extended">
+      <h1>About — Extended</h1>
+      <p class="muted" style="max-width:760px">
+        This page links to my deeper background and goals. I keep the **SBA Worksheet** on Notion
+        so I can update it in real time. If the preview below doesn’t load (Notion sometimes blocks
+        embeds), use the button to open it directly.
+      </p>
+
+      <div class="cta" style="justify-content:flex-start;margin-top:12px">
+        <a class="button" href="https://elhamamini.notion.site/SBA-worksheet-by-Elham-Amini-12ae247d3a6b80d0aeebeebe2d65e8ee" target="_blank" rel="noopener">
+          Open on Notion
+        </a>
+      </div>
+
+      <!-- Try to show a live preview (may be blocked by Notion). -->
+      <div class="embed">
+        <iframe
+          src="https://elhamamini.notion.site/SBA-worksheet-by-Elham-Amini-12ae247d3a6b80d0aeebeebe2d65e8ee"
+          title="SBA Worksheet by Elham Amini"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        ></iframe>
+        <div class="embed-fallback">
+          If the preview above doesn’t load, <a href="https://elhamamini.notion.site/SBA-worksheet-by-Elham-Amini-12ae247d3a6b80d0aeebeebe2d65e8ee" target="_blank" rel="noopener">open it on Notion</a>.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Elham Amini.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
