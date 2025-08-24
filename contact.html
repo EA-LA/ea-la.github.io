@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Elham Amini</title>
   <meta name="description" content="Contact Elham Amini — business inquiries, collaborations, and strategy calls." />
+
+  <!-- Mobile browser bar color -->
+  <meta name="theme-color" content="#050505">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
 </head>
@@ -30,7 +34,7 @@
         <a href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>.
       </p>
 
-      <!-- ✅ Using your real Formspree endpoint + redirect to thank-you.html -->
+      <!-- ✅ Formspree working version -->
       <form class="ea-form" action="https://formspree.io/f/mdklnaol" method="POST" accept-charset="UTF-8">
         <label>
           <span>Name</span>
@@ -47,13 +51,8 @@
           <textarea name="message" rows="6" placeholder="Tell me what you need…" required></textarea>
         </label>
 
-        <!-- Email subject line you’ll see -->
         <input type="hidden" name="_subject" value="New message from elhamamini.cc">
-
-        <!-- Redirect after successful submit -->
         <input type="hidden" name="_next" value="https://elhamamini.cc/thank-you.html">
-
-        <!-- Simple bot trap -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
         <button class="button submit" type="submit">Send Message</button>
