@@ -186,3 +186,11 @@ footer{
   .ea-form{ grid-template-columns:1fr; }
   .button.submit{ justify-self:stretch; text-align:center; }
 }
+
+/* ===== Mobile Navbar Fix (keep menu on one line) ===== */
+@media (max-width:768px){
+  .nav{ padding:10px 12px; }
+  .nav .brand{ font-size:15px; }
+  .nav .menu a{ font-size:14px; margin-left:10px; }
+  .nav .menu .button{ font-size:14px; padding:8px 12px; }
+}
