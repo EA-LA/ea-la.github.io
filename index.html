@@ -4,24 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Elham Amini — Official Website</title>
-  <meta name="description" content="Elham Amini — Entrepreneur, App Builder, Trader, and Digital Stoic." />
+  <meta name="description" content="Elham Amini — Digital Stoic, App Builder, Trader. Building systems, freedom, and legacy." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="index.html">EA • Elham Amini</a>
+    <a class="brand" href="#">EA • Elham Amini</a>
     <nav class="menu">
       <a href="#about">About</a>
+      <a href="#philosophy">Philosophy</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#stories">Stories</a>
-      <a href="about.html">More About</a> <!-- 🔥 new link added -->
       <a class="button small" href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <h1>Elham Amini</h1>
       <p class="subtitle">
@@ -29,15 +32,103 @@
       </p>
       <div class="cta">
         <a class="button" href="#projects">View Projects</a>
-        <a class="button ghost" href="https://www.instagram.com/___elham_amini___" target="_blank">Instagram</a>
+        <a class="button ghost" href="https://www.instagram.com/___elham_amini___" target="_blank" rel="noopener">Instagram</a>
+        <a class="button ghost" href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </section>
 
-    <!-- your sections (about, services, projects, stories, etc.) stay here -->
+    <!-- ABOUT (text only, no image) -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-wrap text-only">
+        <div class="about-text">
+          <p>
+            I’m building apps, systems, and digital empires that help creators and entrepreneurs win.
+            My operating system blends <strong>stoicism</strong> (control yourself), <strong>biohacking</strong> (upgrade the body),
+            and <strong>relentless execution</strong> (ship fast). This isn’t about fitting in —
+            it’s about <strong>freedom, legacy, and rewriting the rules of the Matrix</strong>.
+          </p>
+          <ul class="bullets tight">
+            <li><strong>Founder mindset:</strong> design with intent, measure with truth, iterate with speed.</li>
+            <li><strong>Products over promises:</strong> useful software beats noise.</li>
+            <li><strong>Community first:</strong> empower teens & builders to create real leverage.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy">
+      <h2>Philosophy</h2>
+      <div class="pill-grid">
+        <span class="pill">Discipline &gt; Motivation</span>
+        <span class="pill">Freedom is a Skill</span>
+        <span class="pill">Build Systems, Not Jobs</span>
+        <span class="pill">Skin in the Game</span>
+        <span class="pill">Privacy by Default</span>
+        <span class="pill">Speed + Quality</span>
+      </div>
+      <p class="muted">Execution compounds. Every day is a rep.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card glow">
+          <h3>App Build & UI Review</h3>
+          <p>Swift/Xcode guidance, feature planning, and UI/UX polish to ship V1 clean and fast.</p>
+          <a class="chip" href="contact.html">Request Review</a>
+        </article>
+        <article class="card glow">
+          <h3>Trading Utilities & Setup</h3>
+          <p>Position-size tools, journaling, and risk frameworks tailored to your strategy.</p>
+          <a class="chip" href="contact.html">Get Setup</a>
+        </article>
+        <article class="card glow">
+          <h3>1:1 Strategy Call</h3>
+          <p>30–45 min focused session: roadmap, bottlenecks, and next actions.</p>
+          <a class="button small" href="contact.html">Book a Call</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Featured Project</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>FYNX (iOS)</h3>
+          <p>Trading utilities, calculators, and clean UI built in Swift. A practical toolkit for disciplined traders.</p>
+          <div><span class="badge">Swift</span> <span class="badge">iOS</span></div>
+        </article>
+      </div>
+      <p class="muted">More projects will appear here as they launch.</p>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories">
+      <h2>Success Stories</h2>
+      <div class="grid">
+        <blockquote class="quote">“Elham’s frameworks turned my chaos into a plan. I finally trade my plan — not my mood.” <span>— M.S.</span></blockquote>
+        <blockquote class="quote">“Actionable steps every call. No fluff — just clarity and momentum.” <span>— R.T.</span></blockquote>
+        <blockquote class="quote">“UI review + system setup helped me ship v1 3× faster.” <span>— A.K.</span></blockquote>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2>Ready to build with discipline?</h2>
+      <div class="cta">
+        <a class="button" href="contact.html">Contact</a>
+        <a class="button ghost" href="https://wa.me/19862180719" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="button ghost" href="https://www.instagram.com/___elham_amini___" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Elham Amini.
+    © <span id="year"></span> Elham Amini. All rights reserved.
   </footer>
 
   <script>
