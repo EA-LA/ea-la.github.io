@@ -11,6 +11,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- INTRO SCREEN -->
+  <div id="intro" role="dialog" aria-label="Welcome screen">
+    <div class="intro-inner">
+      <span class="intro-msg" id="introMsg"></span><span class="intro-cursor" id="introCursor">▍</span>
+    </div>
+  </div>
+  <style>
+    body.intro-lock{overflow:hidden}
+    #intro{
+      position:fixed; inset:0; background:#000;
+      display:flex; align-items:center; justify-content:center;
+      z-index:9999; opacity:1; transition:opacity .6s ease;
+      background-image: radial-gradient(800px 400px at 70% -10%, rgba(229,9,20,.12), transparent 60%);
+    }
+    #intro.fade{opacity:0; pointer-events:none;}
+    #intro .intro-inner{ text-align:center; max-width:90vw; }
+    #intro .intro-msg{
+      color:#e9e9e9;
+      font-size:clamp(20px,3.8vw,28px);
+      letter-spacing:.3px; line-height:1.4;
+      display:inline-block;
+    }
+    #intro .intro-cursor{
+      color:#e50914;
+      font-weight:700; margin-left:6px;
+      animation: blink 1s steps(1,end) infinite;
+    }
+    @keyframes blink{ 50%{ opacity:0; } }
+  </style>
+  <!-- END INTRO -->
+
   <header class="nav">
     <a class="brand" href="index.html">EA • Elham Amini</a>
     <nav class="menu">
@@ -126,7 +158,7 @@
       </div>
     </section>
 
-    <!-- MORE ABOUT LINK (ONLY CHANGE WE MADE) -->
+    <!-- MORE ABOUT LINK -->
     <section class="more-about">
       <p style="text-align:center; margin-top:40px;">
         <a href="https://elhamamini.notion.site/SBA-worksheet-by-Elham-Amini-12ae247d3a6b80d0aeebeebe2d65e8ee?pvs=74" 
@@ -141,6 +173,38 @@
   <footer>
     © <span id="year"></span> Elham Amini. All rights reserved.
   </footer>
+
+  <!-- SCRIPT FOR TYPING INTRO -->
+  <script>
+  (function(){
+    const intro = document.getElementById('intro');
+    const msgEl = document.getElementById('introMsg');
+    const seen = sessionStorage.getItem('seenIntro');
+    if (seen === '1') { intro.remove(); return; }
+    document.body.classList.add('intro-lock');
+    const message = "Welcome, you've entered the system...";
+    let i = 0;
+    const speed = 55;
+    function type() {
+      if (i < message.length) {
+        msgEl.textContent += message.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      } else {
+        setTimeout(() => {
+          intro.classList.add('fade');
+          document.body.classList.remove('intro-lock');
+          setTimeout(() => {
+            intro.remove();
+            sessionStorage.setItem('seenIntro','1');
+          }, 650);
+        }, 500);
+      }
+    }
+    window.addEventListener('load', () => setTimeout(type, 300));
+  })();
+  </script>
+  <!-- END INTRO SCRIPT -->
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
