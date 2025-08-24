@@ -7,6 +7,9 @@
   --muted:#a8a8a8;
 }
 
+/* iOS bottom bar fix: give <html> a solid dark bg */
+html { background:#050505; }
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
