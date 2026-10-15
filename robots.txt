@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Sitemap: https://ea-la.github.io/sitemap.xml
+Sitemap: https://ea-la.github.io/fynx-docs/sitemap.xml
+Sitemap: https://ea-la.github.io/fynx-finance-world/sitemap.xml
